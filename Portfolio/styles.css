@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+  }
+
+.home {
+    display: flex;
+    flex-flow: column wrap;
+    margin: auto;
+    max-width: 1920px;
+}
+.topnav {
+    margin: auto;
+    display: block;
+    width: 65%;
+}
+.topnav ul {
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    opacity: 90%;
+    position: fixed;
+    top: 0;
+    width: 65%;
+    z-index: 1;
+    border-radius: 5px;
+
+}
+.topnav li h1 {
+    float: left;
+    color: white;
+    padding-left: 5px;
+}
+.topnav li a {
+    display: block;
+    float: right;
+    color: white;
+    text-align: center;
+    padding: 24px 16px;
+    text-decoration: none;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+main {
+    position: relative;
+    top: 80px;
+}
+
+.contact {
+    display: flex;
+    flex-flow: column;
+    position: relative;
+    top: 100px;
+    width: 50%;
+}
+.contact, textarea, button {
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+}
+textarea, button{
+    width: 50%;
+}
+button {
+    margin: auto;
+}
+img {
+    width: 45%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: space-evenly;
+
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    width: 65%;
+    margin: auto;
+}
+#carnegie {
+    width: 250px;
+    height: 300px;
+    border-radius: 8%;
+    padding: 10px;
+}
+#achievements {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    margin: auto;
+}
+figcaption {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+    text-align: left;
+    padding: 5px;
+}
+h1, h2, h3 {
+    font-family:Arial, Helvetica, sans-serif;
+}
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#contributions {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    margin: auto;
+}
+
+#toggle {
+    width: 25px;
+    position: relative;
+    top: 7px;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+#peace {
+    width: 25px;
+    position: relative;
+    top: 7px;
+    left: 10px;
+    border-radius: 10%;
+}
+
+@media (max-width: 600px) {
+    .home {
+        flex-direction: column;
+    }
+}
